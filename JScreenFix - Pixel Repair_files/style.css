@@ -1,0 +1,238 @@
+body {
+	margin: 0;
+	color: #34495e;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	line-height: 1.231;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0 0 10px 25px;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 940px;
+}
+
+.spacer {
+	margin-bottom: 100px;
+}
+
+.top {
+	padding: 73px 0 60px;
+	text-align: center;
+}
+
+.header {
+	font-size: 90px;
+	font-weight: 900;
+	letter-spacing: -2px;
+	line-height: 100px;
+}
+
+.header small {
+	color: rgba(52, 73, 94, 0.30000000000000004);
+	display: block;
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	padding-top: 5px;
+	line-height: 22px;
+}
+
+.social {
+	margin-top: 16px;
+}
+
+.macPreview {
+	background: url("../images/imac.png") 0 0 no-repeat;
+	background-size: 940px 778px;
+	margin-bottom: 77px;
+	padding: 38px 38px 267px;
+	position: relative;
+}
+
+.macPreviewScreen {
+	background-color: #1abc9c;
+	font-size: 18px;
+	-webkit-transition: background-color 1000ms linear;
+	-moz-transition: background-color 1000ms linear;
+	-o-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+	min-height: 317px;
+	padding: 123px 199px 33px 306px;
+}
+
+.macPreviewScreen:hover {
+	background-color: #333;
+	-webkit-transition: background-color 1000ms linear;
+	-moz-transition: background-color 1000ms linear;
+	-o-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+}
+
+.tile {
+	-webkit-transition: background-color 500ms linear;
+	-moz-transition: background-color 500ms linear;
+	-o-transition: background-color 500ms linear;
+	-ms-transition: background-color 500ms linear;
+	transition: background-color 500ms linear;
+}
+
+.tile:hover {
+	color: #fff;
+	background-color: #1abc9c;
+	-webkit-transition: background-color 100ms linear;
+	-moz-transition: background-color 100ms linear;
+	-o-transition: background-color 100ms linear;
+	-ms-transition: background-color 100ms linear;
+	transition: background-color 100ms linear;
+}
+
+.tile:hover .tile-image {
+	-webkit-filter: invert(100%);  
+}
+
+
+.fixscreen {
+	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809) );
+	background:-moz-linear-gradient( center top, #89c403 5%, #77a809 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809');
+	background-color:#89c403;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #74b807;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 8px #528009;
+}
+.fixscreen:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #89c403) );
+	background:-moz-linear-gradient( center top, #77a809 5%, #89c403 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403');
+	background-color:#77a809;
+}
+.fixscreen:active {
+	position:relative;
+	top:1px;
+}
+
+#launchButton {
+	font-size: 30px;
+	padding: 30px;
+}
+
+
+#fixScreen {
+	position:fixed;
+	top:0%;
+	left:0%; 
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 1000ms linear;
+	-moz-transition: opacity 1000ms linear;
+	-o-transition: opacity 1000ms linear;
+	-ms-transition: opacity 1000ms linear;
+	transition: opacity 1000ms linear;
+}
+
+#canvas {
+	width: 256px;
+	height: 256px;
+}
+
+#canvasFrame {
+	margin-top: 100px;
+	margin-left: 100px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	width: 256px;
+	height: 256px;
+	background-color: #444;
+	padding: 10px;
+	cursor: move;
+}
+
+#sponsorFrame {
+	position: fixed;
+	width: 336px;
+	height: 280px;
+}
+
+#sponsorFrameLeaderboardWrapper {
+	position: fixed;
+	left: 100px;
+	right: 100px;
+	text-align: center;
+}
+
+#sponsorFrameLeaderboard {
+	display: inline;
+	width: 728px;
+	height: 90px;
+}
+
+.moveLeft {
+	left: 8px;
+}
+
+.moveRight {
+	right: 8px;
+}
+
+.moveTop {
+	top: 8px;
+}
+
+.moveBottom {
+	bottom: 8px;
+}
+
+#jscreenfixButtonWrapper {
+	text-align: center;
+	margin: 80px;
+}
+
+#backButtonWrapper {
+	position: fixed;
+}
+
+#fullscreenButtonWrapper {
+	position: fixed;
+}
+
+#stuckPixels {
+	width: 16px;
+	height: 16px;
+	margin-left: 100px;
+	margin-top: 40px;
+}
+
+#dragTip {
+	margin-top: 170px;
+	margin-left: 170px;
+	width: 200px;
+}
+
+#jadsLogo {
+	margin-top: 16px;
+	font-size: 12px;
+}
